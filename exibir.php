@@ -31,7 +31,7 @@ $con = $mysqli->query($consulta) or die($mysqLI->error);
                 <td><?php echo $dado["email"]; ?></td>
                 <td><?php echo $dado["telefone"]; ?></td>
                 <td><?php echo $dado["sexo"]; ?></td>
-                <td><?php echo $dado["data_nascimento"]; ?></td>
+                <td><?php echo $dado["data"]; ?></td>
                 <td><?php echo $dado["cidade"]; ?></td>
                 <td><?php echo $dado["estado"]; ?></td>
                 <td><?php echo $dado["endereco"]; ?></td>

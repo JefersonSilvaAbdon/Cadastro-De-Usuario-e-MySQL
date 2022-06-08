@@ -1,37 +1,41 @@
 <?php
     // Estabelecer o envio de dados ao MYSQL
-     if(isset($_POST['submit']))
-    {
-        print_r($_POST['nome']);
-        print_r('<br>');
-        print_r($_POST['email']);
-        print_r('<br>');
-        print_r($_POST['telefone']);
-        print_r('<br>');
-        print_r($_POST['genero']);
-        print_r('<br>');
-        print_r($_POST['cidade']);
-        print_r('<br>');
-        print_r($_POST['estado']);
-        print_r('<br>');
-        print_r($_POST['endereco']);
+    
+        if(isset($_POST['submit']))
+        {
+            print_r($_POST['nome']);
+            print_r('<br>');
+            print_r($_POST['email']);
+            print_r('<br>');
+            print_r($_POST['telefone']);
+            print_r('<br>');
+            print_r($_POST['genero']);
+            print_r('<br>');
+            print_r($_POST['data_nascimento']);
+            print_r('<br>');
+            print_r($_POST['cidade']);
+            print_r('<br>');
+            print_r($_POST['estado']);
+            print_r('<br>');
+            print_r($_POST['endereco']);
+        
+        
+            // Reconhece a conexão MYSQL estabelecida no arquivo "config.php"
+            include_once('config.php');
 
-        // Reconhece a conexão MYSQL estabelecida no arquivo "config.php"
-        include_once('config.php');
+            $nome = $_POST['nome'];
+            $email = $_POST['email'];
+            $telefone = $_POST['telefone'];
+            $sexo = $_POST['genero'];
+            $data_nascimento = $_POST['data_nascimento'];
+            $cidade = $_POST['cidade'];
+            $estado = $_POST['estado'];
+            $endereco = $_POST['endereco'];
 
-        $nome = $_POST['nome'];
-        $email = $_POST['email'];
-        $telefone = $_POST['telefone'];
-        $sexo = $_POST['genero'];
-        $data_nascimento = $_POST['data_nascimento'];
-        $cidade = $_POST['cidade'];
-        $estado = $_POST['estado'];
-        $endereco = $_POST['endereco'];
-
-        // Envia os dados para as tabelas do banco de dados criadas
-        $result = mysqli_query($mysqli, "INSERT INTO usuarios(nome,email,telefone,sexo,data_nascimento,cidade,estado,endereco) 
-        VALUES('$nome','$email','$telefone','$sexo','$data_nascimento','$cidade','$estado','$endereco')");
-    }
+            // Envia os dados para as tabelas do banco de dados criadas
+            $result = mysqli_query($mysqli, "INSERT INTO usuarios(nome,email,telefone,sexo,data_nascimento,cidade,estado,endereco) 
+            VALUES('$nome','$email','$telefone','$sexo','$data_nascimento','$cidade','$estado','$endereco')");
+        }
 ?>
 <!DOCTYPE html>
 <html lang="en">
