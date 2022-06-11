@@ -21,8 +21,8 @@ outlook = client.Dispatch('Outlook.Application')
 message = outlook.CreateItem(0)
 message.Display()
 message.To = "jeferson.ju.silva@gmail.com"
-message.Subject = "teste"
-message.Body = ("Estes são os usuários cadastrado no Banco de Dados" + str(rows))
+message.Subject = "ENVIO DE DADOS"
+message.Body = ("Estes são os usuários cadastrado no Banco de Dados \n" + str(rows))
 message.Save()
 message.Send()
 
