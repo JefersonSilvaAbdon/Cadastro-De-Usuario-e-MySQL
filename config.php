@@ -2,8 +2,8 @@
 
     // Faz conexão com o MYSQL
     $dbHost = 'localhost';
-    $dbUsername = 'root';
-    $dbPassword = '251095';
+    $dbUsername = 'yourname';
+    $dbPassword = 'yourpass';
     $dbName = 'form-api';
 
     $mysqli = new mysqli($dbHost,$dbUsername,$dbPassword,$dbName);
