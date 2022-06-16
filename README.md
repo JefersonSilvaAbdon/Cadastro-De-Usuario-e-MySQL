@@ -1,5 +1,5 @@
 # Cadastro-De-Usuario-e-MySQL
-Esse php coleta as informações de usuário e armazena elas no banco de dados MySQL. Em seguida, é possível consultar o BD com a rota "exibir.php" rodando em uma conexão local
+Esse php coleta as informações de usuário e armazena elas no banco de dados MySQL. Em seguida, é possível consultar o BD com a rota "exibir.php" rodando em uma conexão local. Também é possível consumir esses dados no arquivo api.py, e enviar o banco de dados para o email.
 
                                                        TELA DE CADASTRO
 
@@ -31,6 +31,6 @@ Esse php coleta as informações de usuário e armazena elas no banco de dados M
 </div>
 <br>
 
-                                                   DEMONSTRAÇÃO
+                                                       DEMONSTRAÇÃO
 <br>
                                                    https://youtu.be/FIlq1UfuUaM
